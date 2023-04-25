@@ -121,39 +121,37 @@ def calcularInvestimento():
 def sair():
     exit()
     
-calcularInvestimento()
     
-#def menu_de_opcoes():
-#    print()
-#
-#    print(colored("Digite a opção desejada: ", "white", "on_yellow"))
-#    print(colored("1 - Informar salario", "yellow"))
-#    print(colored("2 - Alterar salario", "yellow"))
-#    print(colored("3 - Excluir salario", "yellow"))
-#    print(colored("4 - Listar salarios", "yellow"))
-#    print(colored("5 - Informar despesa", "yellow"))
-#    print(colored("6 - Alterar despesa", "yellow"))
-#    print(colored("7 - Remover despesa", "yellow"))
-#    print(colored("8 - Listar despesas", "yellow"))
-#    print(colored("9 - Mostar resultado", "yellow"))
-#    print(colored("0 - Sair", "yellow"))
-#
-#    print()
-#
-#    try:
-#        opcao_selecionada = int(input(colored("joao-serasa: ~$ ", "light_green")))
-#    except:
-#        print(colored("Erro: Opção informada inválida", "red"))
-#        return menu_de_opcoes()
-#    if 0 <= opcao_selecionada < 10:
-#        return opcao_selecionada
-#    else:
-#        print(colored("Erro: Opção informada inválida", "red"))
-#        return menu_de_opcoes()
-#
-#while True:
-#        [sair, informarSalario, alterarSalario, excluir,
-#         listarSalarios, informarDespesa, alterarDespesa, excluir,
-#         listarDespesas][menu_de_opcoes()]()
-#    
-#
+def menu_de_opcoes():
+   print()
+
+   print(colored("Digite a opção desejada: ", "white", "on_yellow"))
+   print(colored("1 - Informar salario", "yellow"))
+   print(colored("2 - Alterar salario", "yellow"))
+   print(colored("3 - Excluir salario", "yellow"))
+   print(colored("4 - Listar salarios", "yellow"))
+   print(colored("5 - Informar despesa", "yellow"))
+   print(colored("6 - Alterar despesa", "yellow"))
+   print(colored("7 - Remover despesa", "yellow"))
+   print(colored("8 - Listar despesas", "yellow"))
+   print(colored("9 - Calcular Investimento", "yellow"))
+   print(colored("0 - Sair", "yellow"))
+
+   print()
+
+   try:
+       opcao_selecionada = int(input(colored("joao-serasa: ~$ ", "light_green")))
+   except:
+       print(colored("Erro: Opção informada inválida", "red"))
+       return menu_de_opcoes()
+   if 0 <= opcao_selecionada < 10:
+       return opcao_selecionada
+   else:
+       print(colored("Erro: Opção informada inválida", "red"))
+       return menu_de_opcoes()
+
+while True:
+       [sair, informarSalario, alterarSalario, excluir,
+        listarSalarios, informarDespesa, alterarDespesa, excluir,
+        listarDespesas, calcularInvestimento][menu_de_opcoes()]()
+   
